@@ -1,0 +1,128 @@
+
+.section-about {
+    padding: 5rem 0;
+
+    .about {
+        position: relative;
+
+        &-img {
+            width: 90%;
+        }
+    }
+
+    & svg {
+        position: relative;
+        margin-top: 8rem;
+        width: 100%;
+
+        & path {
+            fill: $color-white-dark;
+        }
+    }
+}
+
+.section-skill {
+    background-color: $color-white-dark;
+    margin-top: -7rem; //moves the section into svg divider
+    padding: 2rem 0;
+
+    .skill {
+        position: relative;
+        &-box {
+            width: 100%;
+            color: $color-white-dark;
+            background-color: $color-red;
+            font-size: $font-default;
+            text-align: center;
+            border-radius: 5px;
+            padding: 1rem 1.5rem;
+            transition: .2s all;
+            &-icon {
+
+            }
+            &:hover {
+                padding: 1rem 1.5rem;
+                box-shadow: 0 1rem 2rem rgba($color-black-dark, .15);
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    & svg {
+        position: relative;
+        margin-top: 8rem;
+        width: 100%;
+
+        & path {
+            fill: $color-white;
+        }
+    }
+}
+
+.section-projects {
+    background-color: $color-white;
+    margin-top: -4rem; //moves the section into svg divider
+    padding: 2rem 0;
+}
+
+.section-work {
+    background-color: $color-white-dark;
+    padding: 5rem 0;
+
+    .work {
+        &-icon {
+            color: $color-red;
+            & i {
+                font-size: 6rem;
+            }
+        }
+        &-title {
+            font-weight: 400;
+        }
+    }
+
+    & svg {
+        position: relative;
+        margin-top: 8rem;
+        width: 100%;
+
+        & path {
+            fill: $color-white;
+        }
+    }
+}
+
+.section-testimonials {
+    background-color: $color-white;
+    margin-top: -6rem; //moves the section into svg divider
+    padding: 2rem 0;
+
+    & svg {
+        position: relative;
+        margin-top: 8rem;
+        width: 100%;
+
+        & path {
+            fill: $color-gray-dark;
+        }
+    }
+}
+
+.section-contact {
+    background-color: $color-gray-dark;
+    margin-top: -4rem; //moves the section into svg divider
+    padding: 2rem 0;
+
+    .contact {
+        &-link {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 6rem;
+        }
+        &-link-2 {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 5rem;
+        }
+    }
+}

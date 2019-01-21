@@ -1,0 +1,36 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;/*changes browser default of 16px to font size default of 1rem = 10px*/
+
+    @include respond(tablet-wide) {
+        font-size: 56.25%; //1rem = 9px, 9/16=56.25%
+    }
+
+    @include respond(tablet-reg) {//this will work for phone as well
+        font-size: 50%; //1rem = 8px, 8/16=50%
+    }
+
+    @include respond(desktop-big) {
+        font-size: 75%; //1rem = 12px, 12/16=75%
+    }
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-gray-dark;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

@@ -1,0 +1,72 @@
+.footer {
+    background-color: $color-black-light;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+
+    @include respond(tablet-reg) {
+        padding: 8rem 0;
+    }
+
+    &-logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &-logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &-nav {
+        border-top: 1px solid $color-gray-light;
+        padding-top: 2rem;
+        display: inline-block;
+
+        @include respond(tablet-reg) {
+           width: 100%;
+           text-align: center;
+        }
+    }
+
+    &-list {
+        list-style: none;
+    }
+
+    &-item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &-link {
+        &:link, &:visited {
+            color: $color-gray-light;
+            background-color: $color-black-light;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,&:active {
+            color: $color-green;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(4deg) scale(1.2);
+        }
+    }
+
+    &-copy {
+        color: $color-gray-light;
+        border-top: 1px solid $color-gray-light;
+        padding-top: 2rem;
+        width: 82%;
+        float: right;
+
+        @include respond(tablet-reg) {
+           width: 100%;
+           float: none;
+        }
+    }
+}

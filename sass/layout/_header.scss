@@ -1,0 +1,116 @@
+header #nav-curve {
+    position: absolute;
+    top: -8.5rem;
+    left: -10px;
+    width: 101%;
+    z-index: 10000;
+}
+
+.header {
+    position: relative;
+    height: 120vh;
+    background-image: url(../img/hero.jpg); 
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+
+    &-nav {
+        display: block;
+        position: absolute !important;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+
+        &-logo {
+            display: inline-block;
+            & img {
+                width: 100%;
+                height: auto;
+                max-width: 7.5rem;
+            }
+        }
+        &-logo a:hover {
+            border-bottom-color: transparent !important;
+        }
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-right: 4rem;
+            
+            & li {
+                display: inline-block;
+                list-style-type: none;
+            }
+            & li:nth-child(2) {
+                margin-left: auto;
+            }
+            & li:not(:last-child) {
+                margin-right: 1.8rem;
+            }
+            & li a {
+                display: block;
+                text-decoration: none;
+                color: $color-white;
+                border: solid 2px transparent;
+                transition: all .2s;
+                padding: .5rem 0;
+            }
+            & li a:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    &-logo-box {
+        position: absolute;
+        top: 23%;
+        left: 30%;
+        transform: translate(-50%, -30%);
+        text-align: center;
+        width: 100%;
+    }
+
+    &-logo {
+        height: 100%;
+        max-height: 40rem;
+    }
+
+    &-text-box {
+        position: absolute;
+        top: 69%;
+        left: 30%;
+        transform: translate(-50%, -70%);
+        text-align: center;
+        padding: 1.5rem 1rem;
+        width: 45%;
+        background-color: rgba($color-black, .60);
+        border-radius: 5px;
+    }
+
+    & i {
+        position: absolute;
+        top: 78%;
+        left: 30%;
+        transform: translate(-50%, -70%);
+        text-align: center;
+        font-size: 4.5rem;
+        color: $color-black;
+        animation: bounce 2s infinite;
+        -moz-animation: bounce 2s infinite;
+    }
+}
+
+header #curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill: $color-white;
+}
